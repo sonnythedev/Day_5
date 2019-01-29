@@ -1,0 +1,98 @@
+Yesterday, we left off with:
+
+  ... Write a function that checks if a number is prime or not. A prime number is only divisible by that number and 1 only. 
+
+  ... Write a function that returns the last item of the array, without modifying the array. Modify this function to return first item and middle item as well. 
+
+Today we will explore the following:
+   Continue with some more algorithms:
+
+  1. Write a function that takes in an array of number and returns the average of the numbers. The return type should be number. (also make sure items are converted to number first)
+
+   2. Write a function that takes in an array and returns the maximum and minimum value. The return type should be maximum_minimum. For example, [100,2,1,3,4,5] should return 100_1 . Try to do this in one loop.
+
+   3. Write a function that takes in an array and removes duplicates if any.
+      For example, [1,2,3,3,4,5,6,7,7,7] should return [1,2,3,4,5,6,7]
+            [1,2,3,4] should return [1,2,3,4]
+
+   
+Review Functions. Lets discuss the benefits of functions. Scoping, reusability, passing parameters. Discuss local and global scope and give example.
+
+let myAmt=1000;
+
+function deposit(amt){
+    myAmt+=amt;
+}
+function withdraw(amt){
+    myAmt-=amt;
+}
+function giveDiscount(){
+    let myAmt=500;
+    myAmt +=200; //would it modify the global myAmt?
+}
+
+
+Different ways to write functions
+
+1st way: declaration
+
+function myFunc(param){
+    return something;
+}
+myFunc(5);
+
+2nd way: named function/expression
+
+let myFunc=function(param){
+    return param+5;
+}
+let myFunc2=myFunc;
+myFunc2(5); //examine what we get from myFunc2
+
+myFunc2=function(param1,param2){
+    return param1+param2+5;
+}
+myFunc2(5,6);
+
+3rd way: es6
+
+const myFunc=(param)=>param+5;
+more example:
+
+let arr=[1,2,3,4,5];
+//classic way
+arr.map(
+   function(e,i,arr){
+       return e+5;
+   }
+);
+
+//shorter es6 version
+arr.map((e,i,arr)=>e+5); //one line!
+
+////Algo idea, exchange array item from one index to another
+
+4. function shuffleArr(arr,index1,index2){
+      let temp=arr[index1];
+      arr[index1]=arr[index2]; //index1 is overwritten
+      arr[index2]=temp;
+}
+
+////Explore common Math functions
+
+More algorithms
+
+5. Write a function that returns the hyptenuse of right triangle given base, and height. use the pythegoram theory: a^2+b^2=c^2(b is base, a is height and c is hypotenuse).
+
+Show random quotes based on Math.random()
+
+*** Demo the try catch exception in javascript
+
+If time remaining, get started on XMLHttpRequest()
+
+
+
+
+
+
+

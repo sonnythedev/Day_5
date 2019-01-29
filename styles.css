@@ -1,0 +1,32 @@
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1rem;
+    line-height:1.2rem;
+    width:100%;
+}
+
+.quoteHolder{
+    width:100%;
+}
+.quoteHolder .quote{
+  font-style:italic;
+  background-color:#333333;
+  color:#ffffff;
+}
+.quoteHolder .author{
+    text-indent:1rem;
+    font-weight:bold;
+    font-size:smaller;
+    color:#333333;
+    background-color:#ffffff;
+}
+
+.btn{
+    width:10rem;
+    height:1.5rem;
+    font-weight:bold;
+    background-color:#000090;
+    color:#ffffff;
+    border-radius:25px;
+
+}
